@@ -196,6 +196,7 @@ public struct CodeScannerView: UIViewControllerRepresentable {
 
             view.backgroundColor = UIColor.black
             captureSession = AVCaptureSession()
+            captureSession.sessionPreset = .photo
 
             guard let videoCaptureDevice = videoCaptureDevice else {
                 return
